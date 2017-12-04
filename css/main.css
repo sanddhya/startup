@@ -1,0 +1,331 @@
+.pinkText {
+    color: #cf0989;
+}
+
+.toolkitSection {
+    display: block;
+    width: 100%;
+    height: auto;
+    background-color: darkgray;
+    background-image: url('../images/BG.png');
+    padding: 50px 0;
+}
+
+.deviceSpecification {
+    display: block;
+    width: 100%;
+    position: relative;
+    /*background-image: url('../images/Sendpro C Series Image.png');*/
+}
+
+.deviceSpecification .backgroundImg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.deviceSpecification .backgroundImg img{
+    width: 100%;
+    height: 100%;
+}
+
+.appDescDevice .qSectionLine {
+    padding: 5px;
+}
+
+.deviceSpecCard {
+    background: white;
+    position: relative;
+    padding: 10px;
+    margin: auto;
+    box-shadow: 0px 0px 6px grey;
+}
+
+.faqContainer {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.demoAppsSection {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 70px;
+}
+
+.importBuildSection {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 30px;
+}
+
+.cards {
+    height: auto;
+    width: 70%;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.subheading.pb-underline::after {
+    left: 0;
+}
+
+.card {
+    position: relative;
+    padding: 15px;
+    width: 275px;
+    height: 327px;
+    background: white;
+    margin: auto;
+}
+
+.logo {
+    width: 100%;
+    height: 30%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.logo > img {
+    height: auto;
+    width: 50%;
+    align-self: center;
+}
+
+.logo > .img1 {
+    height: auto;
+    width: 50%;
+    align-self: center;
+}
+
+.logo > .img2 {
+    height: auto;
+    width: 36%;
+    align-self: center;
+}
+
+.logo > .img4 {
+    margin-top: 30px;
+    height: auto;
+    width: 75%;
+    align-self: center;
+}
+
+.bottomHeading {
+    color: #cf0989;
+    bottom: 2px;
+    position: absolute;
+    font-weight: 200;
+}
+
+.faqImage {
+    padding: 0;
+    height: 426px;
+}
+
+.faqText {
+    background: #4F46A1;
+    color: white;
+    padding: 30px;
+    background-image: url(../images/BG.png);
+    height: 426px;
+}
+
+h3 > span {
+    padding-bottom: 3px;
+    border-bottom: 3px solid white;
+}
+
+.qSection {
+    margin-top: 40px;
+    font-size: 17px;
+}
+
+.qSectionLine {
+    padding: 9px;
+}
+
+.mainContentWrapper {
+    margin-top: 10px;
+    background: url("../images/BG Image 2.png");
+    width: 100%;
+}
+
+.importContentWrapper {
+    margin-top: 10px;
+    background: url("../images/BG Image 3.png");
+    width: 100%;
+}
+
+.mainContent {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.subSection {
+    height: 100%;
+    background: white;
+    margin: auto;
+}
+
+.content {
+    position: relative;
+    /*
+    float: left;
+    */
+    padding: 10px;
+    width: 97%;
+    height: 100%;
+    overflow-y: auto;
+    background: white;
+}
+
+.gradient-bar {
+    position: relative;
+    padding-right: 20px;
+}
+
+.gradient-bar::after {
+    position: absolute;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 6px;
+    top: 0;
+    right: 5px;
+    background-image: linear-gradient(90deg, #3e53a4 0%, #cf0989 100%);
+}
+
+.gradientCol {
+    position: relative;
+    /*
+    float: left;
+    */
+    width: 2%;
+    background-image: linear-gradient(90deg, #3e53a4 0%, #cf0989 100%);
+    grid-column: 1 / span 2;
+    height: 100%;
+}
+
+.imgDiv {
+    width: 100%;
+    height: 42%;
+    text-align: center;
+    margin: 5px;
+    overflow-y: auto;
+}
+
+.appDesc, .appDescDevice {
+    margin-top: 10px;
+    overflow-y: auto;
+}
+
+.appDesc2 {
+    margin-top: 10px;
+}
+
+body::-webkit-scrollbar {
+    width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+}
+
+.pinkButt {
+    background-color: #cf0989;
+    border-radius: 37px !important;
+    color: white;
+    margin: auto;
+}
+#pbSMBHackathon .pb-underline::after { 
+    width: 25%;
+}
+.viewSMBBtn{
+    margin:30px 0;
+  
+}
+
+.link-box .link-heading {
+    background: #F2F2F2;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-box .link-heading .icon {
+    width: 100px;
+    max-height: 100px;
+}
+
+.link-box .link-heading .icon img {
+    width: 100%;
+    height: 100%;
+}
+
+.link-box {
+    border-radius: 4px;
+    border-color: #e1e1e1;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+    margin: 10px 0;
+    position: relative;
+}
+
+.link-box .checkBox {
+    position: absolute;
+    top: 25px;
+    left: 15px;
+}
+
+.link-body {
+    padding: 15px;
+    height: 150px;
+    position: relative;
+}
+
+.link-body h4 {
+    color: black;
+}
+
+.link-footer {
+    padding: 10px 15px;
+}
+
+.link-footer .badge {
+    background: #EEEEEE;
+    color: black;
+    padding: 5px 10px;
+}
+
+.link-body, .link-footer {
+    background: #fff;
+}
+
+.link-body p {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+
+.link-box a {
+    text-decoration: none;
+    color: #717171;
+}
+
+.link-box a:hover {
+    color: #717171;
+}

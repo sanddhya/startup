@@ -343,6 +343,7 @@ body::-webkit-scrollbar-thumb {
 
 .highlightText {
     font-weight: bold;
+    font-size: 18px;
 }
 
 .solutionContent {
@@ -360,7 +361,10 @@ body::-webkit-scrollbar-thumb {
     position: absolute;
     left: 10%;
     top: 20%;
-    padding: 40px;
+    padding: 21px;
+    width: 23%;
+    height: 30%;
+    color: #3e53a4;
 }
 
 .circle {
@@ -368,24 +372,37 @@ body::-webkit-scrollbar-thumb {
     border-radius: 50px;
     width: 90px;
     height: 90px;
-    padding: 15px;
+    padding: 15px 11px 5px 5px;
     margin: auto;
     margin-bottom: 10px;
 }
 
 .solutionContent .imgDiv {
-    padding: 10px;
     text-align: center;
     height: auto;
     color: #3e53a4;
 }
 
 .solutionContent .imgDiv > img {
-    height: 35px;
-    width: 35px;
+    height: 75%;
+    width: 75%;
 }
 
 .catName {
     text-align: center;
     color: #3e53a4;
+}
+
+@media only screen and (max-width: 991px) {
+    .sourcedText {
+        background: white;
+        position: absolute;
+        left: 10%;
+        top: 20%;
+        padding: 21px;
+        width: 70%;
+        height: 78%;
+        overflow: auto;
+        color: #3e53a4;
+    }
 }

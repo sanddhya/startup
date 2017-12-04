@@ -405,4 +405,8 @@ body::-webkit-scrollbar-thumb {
         overflow: auto;
         color: #3e53a4;
     }
+
+    .sourcedText li .col-md-8 {
+        text-align: center;
+    }
 }

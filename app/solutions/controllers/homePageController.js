@@ -65,6 +65,12 @@ var homePageController = startupSmb.controller('homePageController', ['$scope', 
 	$(document).ready(function () {
 
 		$(".single-item").slick();
+		$(".contextCarousal").slick({
+			autoplay: true,
+            autoplaySpeed: 1500,
+            dots: true,
+            arrows: false
+		});
 
 		$(".single-item2").slick({
 			autoplay: true,

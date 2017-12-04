@@ -1,7 +1,7 @@
 header {
     padding: 20px 0;
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 header .backgroundImg {
@@ -489,6 +489,13 @@ section#sourcedSolution .imgBackground{
 }
 section#sourcedSolution .imgBackground img{
     width: 100%;
+}
+
+section#context {
+    margin-bottom: 50px;
+}
+section#context h2{
+    margin-top: 5px;
 }
 @media only screen and (max-width: 991px) {
     .api-card{

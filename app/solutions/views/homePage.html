@@ -2,9 +2,10 @@
     <div class="container">
         <div class="row">
             <div class="header-title">
-                <div class="title">
-                    <a href="http://pb.com" target="_blank" class="pb-header-mark"></a>
-                    <label>pitney bowes</label>
+                <div class="title" style="width: 160px">
+                    <!-- <a href="http://pb.com" target="_blank" class="pb-header-mark"></a>
+                    <label>pitney bowes</label> -->
+                    <img src="images/PB Logo.png" style="width: 100%;">
                 </div>
                 <div class="userIcons pull-right">
                     <a href="" class="loginBtn">SIGNUP \ LOGIN</a>
@@ -24,23 +25,31 @@
             </div>
         </div>
         <div class="row surveyVideo">
-            <div class="col-md-3 info">
-                <h2>
-                    PB App Survey
-                </h2>
-                <h4>Thank you for your participation in this survey.</h4>
-                <p>We believe these are the most useful apps for your business basis feedback from community. </p>
-                <p style="margin: 0">Please complete our Survey and get a chance</p>
-                <p class="toWin" style="font-size: 22px">
-                    to win $500
-                </p>
-                <a href="" class="magenta-btn">Learn More</a>
-            </div>
-            <div class="col-md-9 video">
+            <div class="col-md-12 video" ng-if="startSurvey">
                 <div class="videoContainer">
                     <iframe src="https://preprod.rtcvid.net/smbsurvey/embed-iframe.php"></iframe>
                 </div>
 
+            </div>
+            <div class="col-md-12" ng-show="!startSurvey">
+                <div class="startSurvey">
+                    <div class="surveyContainer">
+                        <div class="icon">
+                            <div class="imgBox">
+                                <img src="images/list.png">
+                            </div> 
+                        </div>
+                        <div class="info">
+                            <h4 style="margin-bottom: 30px;">Help us in getting your feedback on some of the applications we believe are most useful for your business.</h4>
+
+                            <h4>Complete This Survey for A Chance to Win</h4>
+                            <span style="font-size: 25px;"> <img src="images/trophy.png" style="width: 40px;margin-right: 15px;"> $500 Cash</span>
+                            <div>
+                                <a href="javascript:void(0)" ng-click="initSurvey()" class="magenta-btn">Start Interactive Survey</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -105,7 +114,7 @@
                 Today, we need your help in getting feedback on top applications sourced. By participating in this short
                 survey, you also get a chance to win $500
             </p>
-            <a href="" class="magenta-btn">Take me to the Survey</a>
+            <a href="javascript:void(0)" ng-click="scrollTop();" class="magenta-btn">Take me to the Survey</a>
         </div>
     </div>
     <section id="context">
@@ -221,7 +230,7 @@
 
                 </div>
 
-                <a href="" class="magenta-btn">Take me to the survey</a>
+                <a href="javascript:void(0)" class="magenta-btn" ng-click="scrollTop();">Take me to the survey</a>
 
             </div>
 

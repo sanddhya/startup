@@ -2,6 +2,7 @@ header {
     padding: 20px 0;
     position: relative;
     margin-bottom: 150px;
+    height: 700px;
 }
 
 header .backgroundImg {
@@ -444,10 +445,8 @@ section.toolkitSection a{
 .surveyVideo .videoContainer{
     position: absolute;
     top: 0;
-    right: 0;
-    width: 90%;
+    width: 100%;
     height: 640px;
-    
 }
 .surveyVideo .videoContainer iframe{
     width: 100%;
@@ -497,6 +496,51 @@ section#context {
 }
 section#context h2{
     margin-top: 5px;
+}
+
+.startSurvey {
+    height: 640px;
+    background-image: url(images/novideo.png);
+    position: relative;
+}
+.surveyContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.surveyContainer .icon {
+    width: 25%;
+    text-align: center;
+    padding: 50px;
+}
+.surveyContainer .icon .imgBox {
+    width: 150px;
+    height: 150px;
+}
+.surveyContainer .icon .imgBox img{
+    width: 100%;
+    height: 100%;
+}
+.surveyContainer .info{
+    width: 40%;
+    
+}
+.startSurvey::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    z-index: 1;
+}
+.surveyContainer>div{
+    z-index: 2;
+}
+.surveyContainer h4{
+    font-size: 18px;
 }
 @media only screen and (max-width: 991px) {
     .api-card{

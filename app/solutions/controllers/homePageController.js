@@ -1,7 +1,20 @@
-var homePageController = startupSmb.controller('homePageController', ['$scope', function ($scope) {
+var homePageController = startupSmb.controller('homePageController', ['$scope','$uibModal', function ($scope,$uibModal) {
     
     $scope.initSurvey = function(){
-    	$scope.startSurvey = true;
+    	/*$scope.startSurvey = true;*/
+    	$uibModal.open({
+            templateUrl: 'videoModal.html',
+            controller: ['$scope', '$uibModalInstance', function ($scope, $uibModalInstance) {
+                $scope.close = function () {
+                    $uibModalInstance.close();
+                }
+            }],
+            backdrop: 'static',
+            windowClass: "videoModal",
+            resolve: {}
+        }).result.then(function (data) {
+            
+        });
     }
 
     $scope.scrollTop = function() {

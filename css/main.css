@@ -337,13 +337,16 @@ body::-webkit-scrollbar-thumb {
     background: black;
     padding: 50px 0;
 }
-#takeToSurvey h4{
+
+#takeToSurvey h4 {
     color: #f0f0f0;
 }
-.takeToSurveyContent{
+
+.takeToSurveyContent {
     position: relative;
 }
-.takeToSurveyContent a.magenta-btn{
+
+.takeToSurveyContent a.magenta-btn {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -365,14 +368,14 @@ body::-webkit-scrollbar-thumb {
 }
 
 .sourcedText {
+    z-index: 10;
     background: white;
     position: absolute;
-    left: 10%;
-    top: 20%;
-    padding: 21px;
-    width: 23%;
-    height: 30%;
+    left: 15%;
+    top: 5%;
+    width: 20%;
     color: #3e53a4;
+    margin-right: 41px;
 }
 
 .circle {

@@ -1,7 +1,7 @@
 header {
     padding: 20px 0;
     position: relative;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
 }
 
 header .backgroundImg {
@@ -445,8 +445,8 @@ section.toolkitSection a{
     position: absolute;
     top: 0;
     right: 0;
-    width: 81%;
-    height: 432px;
+    width: 90%;
+    height: 640px;
     
 }
 .surveyVideo .videoContainer iframe{

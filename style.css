@@ -545,6 +545,9 @@ section#context h2{
 .surveyVideo h2.pb-underline::after{
     background: #f0f0f0;
 }
+a:focus {
+    outline: none;
+}
 @media only screen and (max-width: 991px) {
     .api-card{
         height: auto;

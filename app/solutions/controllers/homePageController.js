@@ -1,5 +1,12 @@
 var homePageController = startupSmb.controller('homePageController', ['$scope', function ($scope) {
     
+    $scope.initSurvey = function(){
+    	$scope.startSurvey = true;
+    }
+
+    $scope.scrollTop = function() {
+    	window.scrollTo(0, 0);
+	};
 	$scope.profiles = [
 			{
 				"name":"Small Business Owner in Retail and Online",

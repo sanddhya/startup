@@ -1,7 +1,7 @@
 header {
     padding: 20px 0;
     position: relative;
-    margin-bottom: 150px;
+    margin-bottom: 200px;
     height: 700px;
 }
 
@@ -541,6 +541,9 @@ section#context h2{
 }
 .surveyContainer h4{
     font-size: 18px;
+}
+.surveyVideo h2.pb-underline::after{
+    background: #f0f0f0;
 }
 @media only screen and (max-width: 991px) {
     .api-card{

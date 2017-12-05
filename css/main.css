@@ -335,10 +335,18 @@ body::-webkit-scrollbar-thumb {
 
 #takeToSurvey {
     background: black;
+    padding: 50px 0;
 }
-
-.takeToSurveyContent {
-    padding: 50px 22px;
+#takeToSurvey h4{
+    color: #f0f0f0;
+}
+.takeToSurveyContent{
+    position: relative;
+}
+.takeToSurveyContent a.magenta-btn{
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 .highlightText {

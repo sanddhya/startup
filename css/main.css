@@ -223,6 +223,18 @@ h3 > span {
     overflow-y: auto;
 }
 
+.imgInfo{
+    padding: 20px 15px;
+    text-align: left;
+}
+
+.surveyBox .imgDiv {
+    width: 100px;
+    text-align: center;
+    margin: 5px auto;
+    overflow-y: auto;
+}
+
 .appDesc, .appDescDevice {
     margin-top: 10px;
     overflow-y: auto;
@@ -371,9 +383,8 @@ body::-webkit-scrollbar-thumb {
     z-index: 10;
     background: white;
     position: absolute;
-    left: 15%;
-    top: 5%;
-    width: 20%;
+    top: 0;
+    width: 381px;
     color: #3e53a4;
     margin-right: 41px;
 }
@@ -402,22 +413,4 @@ body::-webkit-scrollbar-thumb {
 .catName {
     text-align: center;
     color: #3e53a4;
-}
-
-@media only screen and (max-width: 991px) {
-    .sourcedText {
-        background: white;
-        position: absolute;
-        left: 10%;
-        top: 20%;
-        padding: 21px;
-        width: 70%;
-        height: 78%;
-        overflow: auto;
-        color: #3e53a4;
-    }
-
-    .sourcedText li .col-md-8 {
-        text-align: center;
-    }
 }

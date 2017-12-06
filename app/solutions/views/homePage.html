@@ -30,10 +30,13 @@
                     Pitney Bowes SMB Application Assessment Survey
                 </h1>
             </div>
-            <div class="col-md-12 video" ng-if="startSurvey">
-                <div class="videoContainer">
+            <div class="col-md-12 video" style="padding: 0;" ng-if="startSurvey">
+                <!-- <div class="videoContainer">
                     <iframe src="https://preprod.rtcvid.net/smbsurvey/embed-iframe.php"></iframe>
-                </div>
+                </div> -->
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://preprod.rtcvid.net/smbsurvey/embed-iframe.php"></iframe>
+                  </div>
 
             </div>
             <div class="col-md-12" ng-show="!startSurvey">
@@ -82,7 +85,8 @@
 </header>
 
 <section style="position: relative">
-    <div class="sourcedText">
+    <div class="container">
+       <div class="sourcedText">
         <div class="displayFlex">
             <h2 class="pb-underline magenta-text">
                 The Context
@@ -98,15 +102,15 @@
             </p>
             <br>
             <h4 style="color: #3e53a4;" align="left">We sourced solution from</h4>
-            <ul style="list-style: none">
+            <ul style="list-style: none;text-align: center;padding: 0">
                 <li>
                     <div class="row">
-                        <div class="col-md-4" style="padding-right: 0">
+                        <div class="col-md-4">
                             <div class="imgDiv">
                                 <img src="images/Developer icon.png" height="50%" width="50%"/>
                             </div>
                         </div>
-                        <div class="col-md-8" style="padding-top: 2px;padding-left: 0"><span
+                        <div class="col-md-8 imgInfo"><span
                                 class="highlightText">2000</span> global
                             developers
                         </div>
@@ -114,24 +118,24 @@
                 </li>
                 <li>
                     <div class="row">
-                        <div class="col-md-4" style="padding-right: 0">
+                        <div class="col-md-4">
                             <div class="imgDiv">
                                 <img src="images/partner icon.png" height="50%" width="50%"/>
                             </div>
                         </div>
-                        <div class="col-md-8" style="padding-top: 2px;padding-left: 0"><span
+                        <div class="col-md-8 imgInfo" ><span
                                 class="highlightText">12</span> Partners
                         </div>
                     </div>
                 </li>
                 <li>
                     <div class="row">
-                        <div class="col-md-4" style="padding-right: 0">
-                            <div class="imgDiv">
+                        <div class="col-md-4">
+                            <div class="imgDiv" >
                                 <img src="images/Apps icon.png" height="50%" width="50%"/>
                             </div>
                         </div>
-                        <div class="col-md-8" style="padding-top: 2px;padding-left: 0"><span
+                        <div class="col-md-8 imgInfo"><span
                                 class="highlightText">75+</span> Apps
                         </div>
                     </div>
@@ -145,7 +149,10 @@
            <br>
             <a href="javascript:void(0)" ng-click="scrollTop();" class="magenta-btn">Take me to the Survey</a>
        </div>
+    </div> 
     </div>
+
+    
     <section id="context">
         <div class="container">
             <div class="row">

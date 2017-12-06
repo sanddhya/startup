@@ -605,15 +605,87 @@ iframe{
         height: auto;
     }
     .startSurvey>div{
-        padding: 30px 0;
+        padding: 20px 0;
     }
     .startSurvey{
         padding: 15px;
+        height: auto;
     }
     .surveyVideo a.magenta-btn {
         margin-top: 20px;
         display: inline-block;
-        width: 100%;
         text-align: center;
+    }
+    header h1{
+        padding: 0 15px;
+        text-align: center;
+    }
+    .startSurvey .imgBox{
+        width: 100px;
+    }
+    .startSurvey .info{
+        text-align: center;
+    }
+
+    div.sourcedText{
+        position: relative;
+        width: 100%;
+        top: 0;
+        left: 0;
+        text-align: center;
+        padding: 0 15px;
+    }
+    .sourcedText .imgDiv{
+        width: 130px;
+        margin: 0 auto;
+    }
+    .sourcedText h4{
+        text-align: center;
+    }
+    .surveyBox li{
+        margin: 10px 0;
+    }
+    #context .carousalContainer{
+        display: none;
+    }
+    section .sourced{
+        display: none;
+    }
+    .takeToSurveyContent{
+        text-align: center;
+    }
+    div.takeToSurveyContent a.magenta-btn{
+        position: relative;
+        display: inline-block;
+        margin: 15px 0;
+    }
+    div.imgInfo{
+        text-align: center;
+    }
+    header{
+        margin-bottom: 100px;
+    }
+}
+@media only screen and (max-width: 780px) {
+    header .header-title{
+       padding: 0 20px;
+    }
+}
+@media only screen and (max-width: 729px) {
+    header h1.pb-underline::after{
+        display: none;
+    }
+}
+@media only screen and (max-width: 545px) {
+    header .header-title{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 20px;
+    }
+    header .userIcons{
+        margin-top: 20px;
+    }
+    header .loginBtn{
+        margin-left: 0 !important;
     }
 }

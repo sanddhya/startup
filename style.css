@@ -502,7 +502,20 @@ section#context h2{
     height: 640px;
     background-image: url(images/novideo.png);
     position: relative;
+    padding: 0 200px;
 }
+.startSurvey>div,.startSurvey>div>div{
+    height: 100%;
+}
+.startSurvey .icon,.startSurvey .info{
+    display: flex;
+    align-items: center;
+    justify-content: center
+} 
+.startSurvey .imgBox{
+    width: 150px;
+}
+
 .surveyContainer {
     display: flex;
     justify-content: center;
@@ -542,7 +555,7 @@ section#context h2{
 .surveyContainer h4{
     font-size: 18px;
 }
-.surveyVideo h2.pb-underline::after{
+.surveyVideo h1.pb-underline::after{
     background: #f0f0f0;
 }
 a:focus {
@@ -550,17 +563,35 @@ a:focus {
 }
 .modal-dialog{
     width: 1080px !important;
+    background: #000;
 }
-.modal.videoModal .close-btn{
+
+.modal.videoModal .close-btn {
     position: absolute;
     right: 25px;
     top: 25px;
     font-size: 20px;
-    color: #c0c0c0;
+    color: #fff;
     cursor: pointer;
+    z-index: 99;
+    background: rgba(0,0,0,0.5);
+    border-radius: 100%;
+    padding: 7px;
 }
 .modal-backdrop.in{
-    opacity: 0.8;
+    background: linear-gradient(180deg,#666 0,silver);
+    opacity: 0.98;
+}
+.modal.videoModal .modal-content{
+    padding: 0;
+    box-shadow: 0 0 133px 7px rgba(0,0,0,.59);
+    background: rgba(0,0,0,0.7);
+    border: none;
+    border-radius: 0;
+}
+.modal.videoModal{
+    display: flex !important;
+    align-items: center;
 }
 iframe{
     outline: none !important;
@@ -569,5 +600,20 @@ iframe{
     .api-card{
         height: auto;
         margin-bottom: 15px;
+    }
+    .startSurvey>div, .startSurvey>div>div{
+        height: auto;
+    }
+    .startSurvey>div{
+        padding: 30px 0;
+    }
+    .startSurvey{
+        padding: 15px;
+    }
+    .surveyVideo a.magenta-btn {
+        margin-top: 20px;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
     }
 }

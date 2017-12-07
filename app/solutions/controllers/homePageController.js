@@ -1,7 +1,7 @@
 var homePageController = startupSmb.controller('homePageController', ['$scope','$uibModal', function ($scope,$uibModal) {
     
     $scope.initSurvey = function(){
-    	if(mobilecheck()){
+    	if(mobilecheck() || window.innerWidth <= 1024){
     		$scope.startSurvey = true;
     	}
     	else{

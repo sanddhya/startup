@@ -633,7 +633,7 @@ iframe{
         top: 0;
         left: 0;
         text-align: center;
-        padding: 0 15px;
+        
     }
     .sourcedText .imgDiv{
         width: 130px;
@@ -663,7 +663,10 @@ iframe{
         text-align: center;
     }
     header{
-        margin-bottom: 100px;
+        margin-bottom: 50px;
+    }
+    .catName{
+        margin-bottom: 20px;
     }
 }
 @media only screen and (max-width: 780px) {
@@ -677,7 +680,7 @@ iframe{
     }
 }
 @media only screen and (max-width: 545px) {
-    header .header-title{
+    /*header .header-title{
         display: flex;
         flex-wrap: wrap;
         padding: 0 20px;
@@ -687,5 +690,21 @@ iframe{
     }
     header .loginBtn{
         margin-left: 0 !important;
+    }*/
+}
+
+@media only screen and (max-width: 400px) {
+    header{
+        margin-bottom: 100px;
+    }
+    #pbSMBHackathon h2{
+        padding: 0 15px;
+        text-align: center;
+    }
+    #pbSMBHackathon h2.pb-underline::after{
+        display: none;
+    }
+    div.sourcedText{
+        padding: 0;
     }
 }

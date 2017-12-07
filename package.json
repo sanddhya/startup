@@ -16,6 +16,7 @@
   "dependencies": {
     "angular-ui-bootstrap": "^2.5.6",
     "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1",
     "pb-design-system": "^3.2.1"
   }
 }

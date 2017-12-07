@@ -103,7 +103,7 @@ var homePageController = startupSmb.controller('homePageController', ['$scope','
 		});
 
 		$(".single-item2").slick({
-			autoplay: false,
+			autoplay: true,
             autoplaySpeed: 1000
 		});
 

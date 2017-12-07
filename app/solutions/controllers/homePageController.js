@@ -3,6 +3,7 @@ var homePageController = startupSmb.controller('homePageController', ['$scope','
     $scope.initSurvey = function(){
     	if(mobilecheck() || window.innerWidth <= 1024){
     		$scope.startSurvey = true;
+    		window.scrollTo(0, 0);
     	}
     	else{
     		$uibModal.open({
@@ -28,9 +29,7 @@ var homePageController = startupSmb.controller('homePageController', ['$scope','
 	  return check;
 	};
 
-    $scope.scrollTop = function() {
-    	window.scrollTo(0, 0);
-	};
+    
 	$scope.profiles = [
 			{
 				"name":"Small Business Owner in Retail and Online",
@@ -104,7 +103,7 @@ var homePageController = startupSmb.controller('homePageController', ['$scope','
 		});
 
 		$(".single-item2").slick({
-			autoplay: true,
+			autoplay: false,
             autoplaySpeed: 1000
 		});
 

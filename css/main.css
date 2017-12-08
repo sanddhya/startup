@@ -32,6 +32,7 @@
 
 .appDescDevice .qSectionLine {
     padding: 5px;
+    text-align: center;
 }
 
 .deviceSpecCard {
@@ -39,7 +40,7 @@
     position: relative;
     padding: 10px;
     margin: auto;
-    box-shadow: 0px 0px 6px grey;
+    box-shadow: 0px 0px 6px #c0c0c0;
 }
 
 .faqContainer {
@@ -410,10 +411,10 @@ body::-webkit-scrollbar-thumb {
 .deviceSpecification .circleWhite{
     background: #fff;
     border-radius: 50px; 
-    width: 90px;
-    height: 90px;
+    width: 70px;
+    height: 70px;
     padding: 20px 11px 5px 10px;
-    margin: 20px auto 10px auto; 
+    margin: 15px auto 5px auto; 
     border:1px solid #008fd5;
 }
 

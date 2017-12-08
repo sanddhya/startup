@@ -479,7 +479,7 @@ iframe{
 .surveyBox{
     width: 100%;
     padding: 30px;
-    box-shadow: 0px 1px 4px #9b9b9b;
+    box-shadow: 0px 0px 6px #c0c0c0;
     color: #3e53a4;
     margin-right: 41px;
 }
@@ -615,6 +615,12 @@ a:focus {
 iframe{
     outline: none !important;
 }
+.deviceSpecSection{
+    padding-left: 60px;
+}
+.deviceSpecCard h3{
+    margin-top: 5px;
+}
 @media only screen and (max-width: 991px) {
     .api-card{
         height: auto;
@@ -686,6 +692,12 @@ iframe{
     }
     .catName{
         margin-bottom: 20px;
+    }
+    .deviceSpecification div.backgroundImg{
+        position: relative;
+    }
+    .deviceSpecification .deviceSpecSection{
+        padding-left: 15px;
     }
 }
 @media only screen and (max-width: 780px) {

@@ -1,18 +1,16 @@
 var homePageController = startupSmb.controller('homePageController', ['$scope', '$uibModal', '$stateParams', 'serviceForApiCall',
     function ($scope, $uibModal, $stateParams, serviceForApiCall) {
 
+
         var userId = $stateParams.id;
         if (userId) {
             serviceForApiCall.sendEvent('landed', userId);
         }
+
         $scope.initSurvey = function () {
-            $scope.startSurvey = true;
             if (userId) {
                 serviceForApiCall.sendEvent('started survey', userId);
             }
-        };
-
-        $scope.initSurvey = function () {
             if (mobilecheck() || window.innerWidth <= 1024) {
                 $scope.startSurvey = true;
                 window.scrollTo(0, 0);
@@ -116,7 +114,7 @@ var homePageController = startupSmb.controller('homePageController', ['$scope', 
             });
 
             $(".single-item2").slick({
-                autoplay: true,
+                autoplay: false,
                 autoplaySpeed: 1000
             });
 

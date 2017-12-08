@@ -5,11 +5,13 @@ var homePageController = startupSmb.controller('homePageController', ['$scope', 
         var userId = $stateParams.id;
         if (userId) {
             serviceForApiCall.sendEvent('landed', userId);
+            fbq('track', 'landed');
         }
 
         $scope.initSurvey = function () {
             if (userId) {
                 serviceForApiCall.sendEvent('started survey', userId);
+                fbq('track', 'started survey');
             }
             if (mobilecheck() || window.innerWidth <= 1024) {
                 $scope.startSurvey = true;

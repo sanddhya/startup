@@ -1,5 +1,5 @@
-var homePageController = startupSmb.controller('homePageController', ['$scope', '$uibModal', '$stateParams',
-    function ($scope, $uibModal, $stateParams) {
+var homePageController = startupSmb.controller('homePageController', ['$scope', '$uibModal', '$stateParams', 'serviceForApiCall',
+    function ($scope, $uibModal, $stateParams, serviceForApiCall) {
 
         var userId = $stateParams.id;
         if (userId) {

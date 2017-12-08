@@ -617,9 +617,23 @@ iframe{
 }
 .deviceSpecSection{
     padding-left: 60px;
+    margin-top: 80px;
 }
 .deviceSpecCard h3{
     margin-top: 5px;
+}
+.deviceSpecification .deviceHeading{
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+    .deviceSpecSection{
+        padding-left: 0;
+        margin-top: 50px;
+    }
 }
 @media only screen and (max-width: 991px) {
     .api-card{
@@ -708,6 +722,14 @@ iframe{
 @media only screen and (max-width: 729px) {
     header h1.pb-underline::after{
         display: none;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .deviceSpecification .deviceHeading{
+        position: relative;
+    }
+    .deviceSpecification .deviceHeading h2{
+        margin-top: 0;
     }
 }
 @media only screen and (max-width: 545px) {

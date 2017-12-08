@@ -32,14 +32,15 @@
 
 .appDescDevice .qSectionLine {
     padding: 5px;
+    text-align: center;
 }
 
 .deviceSpecCard {
     background: white;
     position: relative;
-    padding: 10px;
+    padding: 15px;
     margin: auto;
-    box-shadow: 0px 0px 6px grey;
+    box-shadow: 0px 0px 6px #c0c0c0;
 }
 
 .faqContainer {
@@ -223,6 +224,18 @@ h3 > span {
     overflow-y: auto;
 }
 
+.imgInfo{
+    padding: 20px 15px;
+    text-align: left;
+}
+
+.surveyBox .imgDiv {
+    width: 100px;
+    text-align: center;
+    margin: 5px auto;
+    overflow-y: auto;
+}
+
 .appDesc, .appDescDevice {
     margin-top: 10px;
     overflow-y: auto;
@@ -371,9 +384,8 @@ body::-webkit-scrollbar-thumb {
     z-index: 10;
     background: white;
     position: absolute;
-    left: 15%;
-    top: 5%;
-    width: 20%;
+    top: 0;
+    width: 381px;
     color: #3e53a4;
     margin-right: 41px;
 }
@@ -387,7 +399,32 @@ body::-webkit-scrollbar-thumb {
     margin: auto;
     margin-bottom: 10px;
 }
+.aboutPB{
+    position: relative;
+    margin-bottom: 80px;
+}
 
+.deviceSpecification{
+    position: relative;
+    margin-bottom: 80px;
+}
+.deviceSpecification .circleWhite{
+    background: #fff;
+    border-radius: 50px; 
+    width: 70px;
+    height: 70px;
+    padding: 20px 11px 5px 10px;
+    margin: 15px auto 5px auto; 
+    border:1px solid #008fd5;
+}
+
+.deviceSpecification .circleWhite .imgDiv {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin: 0;
+    overflow-y: auto;
+}
 .solutionContent .imgDiv {
     text-align: center;
     height: auto;
@@ -402,22 +439,4 @@ body::-webkit-scrollbar-thumb {
 .catName {
     text-align: center;
     color: #3e53a4;
-}
-
-@media only screen and (max-width: 991px) {
-    .sourcedText {
-        background: white;
-        position: absolute;
-        left: 10%;
-        top: 20%;
-        padding: 21px;
-        width: 70%;
-        height: 78%;
-        overflow: auto;
-        color: #3e53a4;
-    }
-
-    .sourcedText li .col-md-8 {
-        text-align: center;
-    }
 }

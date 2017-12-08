@@ -8,17 +8,17 @@
                     <img src="images/PB Logo.png" style="width: 100%;">
                 </div>
                 <div class="userIcons pull-right">
-                    <a href="" class="loginBtn">SIGNUP \ LOGIN</a>
-                    <a href="" class="socialIcon">
+                    <a href="" class="loginBtn ng-hide">SIGNUP \ LOGIN</a>
+                    <a href="https://business.facebook.com/PBSMB2017/?business_id=130991410796217" target="_blank" class="socialIcon">
                         <img src="images/1-FB.png">
                     </a>
-                    <a href="" class="socialIcon">
+                    <a href="" class="socialIcon ng-hide">
                         <img src="images/2-gplus.png">
                     </a>
-                    <a href="" class="socialIcon">
+                    <a href="" class="socialIcon ng-hide">
                         <img src="images/3-Twitter.png">
                     </a>
-                    <a href="" class="socialIcon">
+                    <a href="" class="socialIcon ng-hide">
                         <img src="images/4-Linkdin.png">
                     </a>
                 </div>
@@ -26,31 +26,55 @@
         </div>
         <div class="row surveyVideo">
             <div class="displayFlex" style="justify-content: center;">
-                <h2 class="pb-underline" style="color: #f0f0f0;margin-top: 0">
+                <h1 class="pb-underline" style="color: #f0f0f0;margin-top: 0">
                     Pitney Bowes SMB Application Assessment Survey
-                </h2>
+                </h1>
             </div>
-            <div class="col-md-12 video" ng-if="startSurvey">
-                <div class="videoContainer">
+            <div class="col-md-12 video" style="padding: 0;" ng-if="startSurvey">
+                <!-- <div class="videoContainer">
                     <iframe src="https://preprod.rtcvid.net/smbsurvey/embed-iframe.php"></iframe>
+                </div> -->
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://preprod.rtcvid.net/smbsurvey/embed-iframe.php"></iframe>
                 </div>
+
             </div>
             <div class="col-md-12" ng-show="!startSurvey">
                 <div class="startSurvey">
-                    <div class="surveyContainer">
+                    <!-- <div class="surveyContainer">
                         <div class="icon">
                             <div class="imgBox">
                                 <img src="images/list.png">
-                            </div> 
+                            </div>
                         </div>
                         <div class="info">
                             <h4 style="margin-bottom: 30px;">Help us in getting your feedback on some of the applications we believe are most useful for your business.</h4>
-
                             <h4>Complete This Survey for A Chance to Win</h4>
                             <span style="font-size: 25px;"> <img src="images/trophy.png" style="width: 40px;margin-right: 15px;"> $500 Cash</span>
                             <div>
                                 <a href="javascript:void(0)" ng-click="initSurvey()" class="magenta-btn">Start Interactive Survey</a>
                             </div>
+                        </div>
+                    </div> -->
+                    <div class="col-md-4" style="z-index: 1">
+                        <div class="icon">
+                            <div class="imgBox">
+                                <img src="images/list.png" style="width: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-md-offset-right-1" style="z-index: 1">
+                        <div class="info">
+                            <div>
+                                <h4 style="margin-bottom: 30px;">Help us in getting your feedback on some of the applications we believe are most useful for your business.</h4>
+
+                                <h4>Complete This Survey for A Chance to Win</h4>
+                                <span style="font-size: 25px;"> <img src="images/trophy.png" style="width: 40px;margin-right: 15px;"> $500 Cash</span>
+                                <div>
+                                    <a href="javascript:void(0)" ng-click="initSurvey()" class="magenta-btn">Start Interactive Survey</a>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -58,72 +82,173 @@
         </div>
     </div>
 </header>
+<section class="aboutPB">
+    <div class="container">
+        <div class="displayFlex flex-center">
+            <h2 class="pb-underline magenta-text">
+                About Pitney Bowes
+            </h2>
+
+        </div>
+        <h4 align="center" style="color:#3e53a4">Over the last 100 years, Pitney Bowes has been bringing you best in class shipping and mailing solutions helping millions of small & medium businesses grow businesses more efficiently. We provide a range of equipment, software, supplies and services  to create physical and digital mail, evidence postage and print shipping labels for the sending of mail, flats and parcels.</h4>
+    </div>
+</section>
+<section class="deviceSpecification">
+
+    <div class="backgroundImg">
+        <div class="deviceHeading">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="displayFlex">
+                            <h2 class="pb-underline magenta-text">
+                                SendPro C Series
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <img src="images/Sendpro C Series Image.png">
+    </div>
+    <div class="container">
+        <div class="row deviceSpecContent">
+            <!-- <div class="col-md-12">
+                <div class="displayFlex">
+                    <h2 class="pb-underline magenta-text">
+                        SendPro C Series
+                    </h2>
+                </div>
+            </div> -->
+
+            <div class="col-md-7"></div>
+            <div class="col-md-5 deviceSpecSection">
+                <div class="deviceSpecCard">
+                    <h3 style="color:#3e53a4;font-weight: normal" class="subheading pb-underline">Send Pro C series</h3>
+                    <div class="appDescDevice">
+                        <div class="qSectionLine" style="font-weight: bold">
+                            The next generation office sending solutions
+                        </div>
+                        <div class="circleWhite">
+                            <div class="imgDiv">
+                                <img src="images/smarticon.png" style="width: 75%; height: 75%">
+                            </div>
+                        </div>
+                        <div class="qSectionLine" style="font-weight: bold;text-align: center; color:#333;">
+                            Smart
+                        </div>
+
+                        <div class="qSectionLine" >
+                            Easily compare postal and carrier options and track shipments across the three major carriers directly from your C-Series system or your computer.
+                        </div>
+                        <div class="circleWhite">
+                            <div class="imgDiv">
+                                <img src="images/simpleicon.png" style="width: 75%; height: 75%">
+                            </div>
+                        </div>
+                        <div class="qSectionLine" style="font-weight: bold;text-align: center; color:#333;">
+                            Simple
+                        </div>
+                        <div class="qSectionLine" >
+                            Get the postage and carrier rates right every time with an integrated scale and automatic rate updates.
+                        </div>
+                        <div class="circleWhite">
+                            <div class="imgDiv">
+                                <img src="images/acurateicon.png" style="width: 75%; height: 75%">
+                            </div>
+                        </div>
+                        <div class="qSectionLine" style="font-weight: bold;text-align: center; color:#333;">
+                            Accurate
+                        </div>
+                        <div class="qSectionLine" >
+                            Ensure accurate deliveries with a single address book that verifies shipment addresses across all carriers
+                        </div>
+
+
+                        <div class="qSectionLine" style="text-align: center">
+                            <a href="https://www.pitneybowes.com/us/shipping-and-mailing/postage-meters/sendpro-c-series.html">
+                                <button class="btn btn-circle pinkButt">Learn More
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 <section style="position: relative">
-    <div class="sourcedText">
-        <div class="displayFlex">
-            <h2 class="pb-underline magenta-text">
-                The Context
-            </h2>
+    <div class="container">
+        <div class="sourcedText">
+            <div class="displayFlex">
+                <h2 class="pb-underline magenta-text">
+                    The Context
+                </h2>
+            </div>
+            <div class="surveyBox">
+                <p>
+                    We Launched a SMB challenge in Oct 2017 to bring in Global Developer community to create solutions for
+                    our
+                </p>
+                <p class="bold">
+                    1Mn+ Small and Medium Business Customers like you.
+                </p>
+                <br>
+                <h4 style="color: #3e53a4;" align="left">We sourced solution from</h4>
+                <ul style="list-style: none;text-align: center;padding: 0">
+                    <li>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="imgDiv">
+                                    <img src="images/Developer icon.png" height="50%" width="50%"/>
+                                </div>
+                            </div>
+                            <div class="col-md-8 imgInfo"><span
+                                    class="highlightText">2000</span> global
+                                developers
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="imgDiv">
+                                    <img src="images/partner icon.png" height="50%" width="50%"/>
+                                </div>
+                            </div>
+                            <div class="col-md-8 imgInfo" ><span
+                                    class="highlightText">12</span> Partners
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="imgDiv" >
+                                    <img src="images/Apps icon.png" height="50%" width="50%"/>
+                                </div>
+                            </div>
+                            <div class="col-md-8 imgInfo"><span
+                                    class="highlightText">75+</span> Apps
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <br>
+                <p>
+                    Today, we need your help in getting feedback on top applications sourced. By participating in this short
+                    survey, you also get a chance to win $500
+                </p>
+                <br>
+                <a href="javascript:void(0)" ng-click="initSurvey();" class="magenta-btn">Take me to the Survey</a>
+            </div>
         </div>
-        <div class="surveyBox">
-            <p>
-                We Launched a SMB challenge in Oct 2017 to bring in Global Developer community to create solutions for
-                our
-            </p>
-            <p class="bold">
-                1Mn+ Small and Medium Business Customers like you.
-            </p>
-            <br>
-            <h4 style="color: #3e53a4;" align="left">We sourced solution from</h4>
-            <ul style="list-style: none">
-                <li>
-                    <div class="row">
-                        <div class="col-md-4" style="padding-right: 0">
-                            <div class="imgDiv">
-                                <img src="images/Developer icon.png" height="50%" width="50%"/>
-                            </div>
-                        </div>
-                        <div class="col-md-8" style="padding-top: 2px;padding-left: 0"><span
-                                class="highlightText">2000</span> global
-                            developers
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="row">
-                        <div class="col-md-4" style="padding-right: 0">
-                            <div class="imgDiv">
-                                <img src="images/partner icon.png" height="50%" width="50%"/>
-                            </div>
-                        </div>
-                        <div class="col-md-8" style="padding-top: 2px;padding-left: 0"><span
-                                class="highlightText">12</span> Partners
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="row">
-                        <div class="col-md-4" style="padding-right: 0">
-                            <div class="imgDiv">
-                                <img src="images/Apps icon.png" height="50%" width="50%"/>
-                            </div>
-                        </div>
-                        <div class="col-md-8" style="padding-top: 2px;padding-left: 0"><span
-                                class="highlightText">75+</span> Apps
-                        </div>
-                    </div>
-                </li>
-            </ul>
-            <br>
-            <p>
-                Today, we need your help in getting feedback on top applications sourced. By participating in this short
-                survey, you also get a chance to win $500
-            </p>
-           <br>
-            <a href="javascript:void(0)" ng-click="scrollTop();" class="magenta-btn">Take me to the Survey</a>
-       </div>
     </div>
+
+
     <section id="context">
         <div class="container">
             <div class="row">
@@ -233,7 +358,7 @@
                     </div>
                 </div>
 
-                <a href="javascript:void(0)" class="magenta-btn" ng-click="scrollTop();">Take me to the survey</a>
+                <a href="javascript:void(0)" class="magenta-btn" ng-click="initSurvey();">Take me to the survey</a>
 
             </div>
 
@@ -262,276 +387,301 @@
     <div class='container-fluid'>
         <div class='carousalContainer'>
             <div class='single-item2'>
-                <div><img src="images/1.jpg" class="img-responsive"></div>
-                <div><img src="images/2.jpg" class="img-responsive"></div>
-                <div><img src="images/3.jpg" class="img-responsive"></div>
-                <div><img src="images/5.jpg" class="img-responsive"></div>
+                <div>
+                    <img src="images/1.jpg" class="img-responsive">
+                    <div class="carousal-btn-section">
+                        <a href="http://www.shipticketdesk.com" target="_blank"class="carousal-btn">Get Started</a>
+                    </div>
+                </div>
+                <div>
+                    <img src="images/2.jpg" class="img-responsive">
+                    <div class="carousal-btn-section">
+                        <a href="http://www.shipminders.com" target="_blank" class="carousal-btn">Get Started</a>
+                    </div>
+                </div>
+                <div>
+                    <img src="images/3.jpg" class="img-responsive">
+                    <div class="carousal-btn-section">
+                        <a href="http://www.adooapp.com" target="_blank" class="carousal-btn">Get Started</a>
+                    </div>
+                </div>
+
+
             </div>
         </div>
-
-
-        <div class="carousalContainer">
-
-            <div class="row multiple-items">
-                <div class="col-md-3">
-                    <div class="link-box">
-                        <a href="http://www.searchnship.com" target="_blank">
-                            <div class="link-heading">
-                                <div class="icon">
-                                    <img src="images/logos/6_Search n ship.png">
-                                </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <div class="link-box">
+                    <a href="http://www.searchnship.com" target="_blank">
+                        <div class="link-heading">
+                            <div class="icon">
+                                <img src="images/logos/6_Search n ship.png">
                             </div>
-                            <div class="link-body">
-                                <h4>Search n Ship</h4>
-                                <p>Easy, Quick Ship via nearby shippers</p>
+                        </div>
+                        <div class="link-body">
+                            <h4>Search n Ship</h4>
+                            <p>Easy, Quick Ship via nearby shippers</p>
+                        </div>
+                        <div class="link-footer">
+                            <div class="badge">
+                                Shipping & Mailing
                             </div>
-                            <div class="link-footer">
-                                <div class="badge">
-                                    Shipping & Mailing
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="col-md-3">
-                    <div class="link-box">
-                        <a href="http://www.parcinsure.com" target="_blank">
-                            <div class="link-heading">
-                                <div class="icon">
-                                    <img src="images/logos/5_Parcinsue.png">
-                                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="link-box">
+                    <a href="http://www.parcinsure.com" target="_blank">
+                        <div class="link-heading">
+                            <div class="icon">
+                                <img src="images/logos/5_Parcinsue.png">
                             </div>
-                            <div class="link-body">
-                                <h4>Parcinsure</h4>
-                                <p>Risk Management and Loss Prevention of Shipment</p>
+                        </div>
+                        <div class="link-body">
+                            <h4>Parcinsure</h4>
+                            <p>Risk Management and Loss Prevention of Shipment</p>
+                        </div>
+                        <div class="link-footer">
+                            <div class="badge">
+                                Shipping & Mailing
                             </div>
-                            <div class="link-footer">
-                                <div class="badge">
-                                    Shipping & Mailing
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="col-md-3">
-                    <div class="link-box">
-                        <a href="http://www.shippingcompanion.com" target="_blank">
-                            <div class="link-heading">
-                                <div class="icon">
-                                    <img src="images/logos/6_Search_ship.png">
-                                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="link-box">
+                    <a href="http://www.shippingcompanion.com" target="_blank">
+                        <div class="link-heading">
+                            <div class="icon">
+                                <img src="images/logos/6_Search_ship.png">
                             </div>
-                            <div class="link-body">
-                                <h4>Shipping Companion</h4>
-                                <p>Shipping Companion allows SMBs such as online stores and small
-                                    hyperlocal food delivery businesses to track their shipment status
-                                    in...</p>
+                        </div>
+                        <div class="link-body">
+                            <h4>Shipping Companion</h4>
+                            <p>Shipping Companion allows SMBs such as online stores and small
+                                hyperlocal food delivery businesses to track their shipment status
+                                in...</p>
+                        </div>
+                        <div class="link-footer">
+                            <div class="badge">
+                                Shipping & Mailing
                             </div>
-                            <div class="link-footer">
-                                <div class="badge">
-                                    Shipping & Mailing
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="col-md-3">
-                    <div class="link-box">
-                        <a href="http://www.ravendelivery.com" target="_blank">
-                            <div class="link-heading">
-                                <div class="icon">
-                                    <img src="images/logos/11.png">
-                                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="link-box">
+                    <a href="http://www.ravendelivery.com" target="_blank">
+                        <div class="link-heading">
+                            <div class="icon">
+                                <img src="images/logos/11.png">
                             </div>
-                            <div class="link-body">
-                                <h4>Raven Delivery</h4>
-                                <p>'Raven Delivery' is an on-demand delivery platform integrated with
-                                    UberRush/PostMates systems to our SMB clients. SMBs can opt...</p>
+                        </div>
+                        <div class="link-body">
+                            <h4>Raven Delivery</h4>
+                            <p>'Raven Delivery' is an on-demand delivery platform integrated with
+                                UberRush/PostMates systems to our SMB clients. SMBs can opt...</p>
+                        </div>
+                        <div class="link-footer">
+                            <div class="badge">
+                                Shipping & Mailing
                             </div>
-                            <div class="link-footer">
-                                <div class="badge">
-                                    Shipping & Mailing
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="col-md-3">
-                    <div class="link-box">
-                        <a href="http://www.shipminders.com" target="_blank">
-                            <div class="link-heading">
-                                <div class="icon">
-                                    <img src="images/logos/Shipminders logo.png">
-                                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="link-box">
+                    <a href="http://www.shipminders.com" target="_blank">
+                        <div class="link-heading">
+                            <div class="icon">
+                                <img src="images/logos/Shipminders logo.png">
                             </div>
-                            <div class="link-body">
-                                <h4>Shipminders</h4>
-                                <p>A calendar integration app that saves shipping costs</p>
+                        </div>
+                        <div class="link-body">
+                            <h4>Shipminders</h4>
+                            <p>A calendar integration app that saves shipping costs</p>
+                        </div>
+                        <div class="link-footer">
+                            <div class="badge">
+                                Shipping & Mailing
                             </div>
-                            <div class="link-footer">
-                                <div class="badge">
-                                    Shipping & Mailing
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                 </div>
-
-
-                <div class="col-md-3">
-                    <div class="link-box">
-                        <a href="http://www.esellerprime.com" target="_blank">
-                            <div class="link-heading">
-                                <div class="icon">
-                                    <img src="images/logos/3_eseller.png">
-                                </div>
-                            </div>
-                            <div class="link-body">
-                                <h4>E SellerPrime </h4>
-                                <p>ESellerPrime aims to empower a million sellers in data driven
-                                    decisions to source, analyze and sell in multiple geographies...</p>
-                            </div>
-                            <div class="link-footer">
-                                <div class="badge">
-                                    E Commerce
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="link-box">
-                        <a href="http://www.syncnship.com" target="_blank">
-                            <div class="link-heading">
-                                <div class="icon">
-                                    <img src="images/logos/10_sync.png">
-                                </div>
-                            </div>
-                            <div class="link-body">
-                                <h4>Sync n Ship</h4>
-                                <p>The solution integrates the eCommerce Portals like Shopify, Magento,
-                                    Woocommerce, Prestashop, Amazon etc...</p>
-                            </div>
-                            <div class="link-footer">
-                                <div class="badge">
-                                    E Commerce
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="link-box">
-                        <a href="http://www.onlinerepumanage.com" target="_blank">
-                            <div class="link-heading">
-                                <div class="icon">
-                                    <img src="images/logos/4_Repumanage.png">
-                                </div>
-                            </div>
-                            <div class="link-body">
-                                <h4>Onlinerepumanage</h4>
-                                <p>Online reputation management solution</p>
-                            </div>
-                            <div class="link-footer">
-                                <div class="badge">
-                                    Marketing
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="link-box">
-                        <a href="http://www.adooapp.com" target="_blank">
-                            <div class="link-heading">
-                                <div class="icon">
-                                    <img src="images/logos/1_Adoo.png">
-                                </div>
-                            </div>
-                            <div class="link-body">
-                                <h4>Adoo</h4>
-                                <p>Smart Contacts and New Customer Aquisition App for SMBs</p>
-                            </div>
-                            <div class="link-footer">
-                                <div class="badge">
-                                    Marketing
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="link-box">
-                        <a href="http://www.audiencekart.com" target="_blank">
-                            <div class="link-heading">
-                                <div class="icon">
-                                    <img src="images/logos/2_Audicart.png">
-                                </div>
-                            </div>
-                            <div class="link-body">
-                                <h4>Audiencekart</h4>
-                                <p>Smart Audience connects SMBs such as small retail business owner,
-                                    online retail business, hyperlocal food delivery business...</p>
-                            </div>
-                            <div class="link-footer">
-                                <div class="badge">
-                                    Marketing
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="link-box">
-                        <a href="http://www.shipticketdesk.com" target="_blank">
-                            <div class="link-heading">
-                                <div class="icon">
-                                    <img src="images/logos/9ship.png">
-                                </div>
-                            </div>
-                            <div class="link-body">
-                                <h4>Shipticketdesk</h4>
-                                <p>FreshDesk help desk automation plugin for SendPro C Series
-                                    devices</p>
-                            </div>
-                            <div class="link-footer">
-                                <div class="badge">
-                                    Customer Support
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="link-box">
-                        <a href="http://www.selfservebot.com" target="_blank">
-                            <div class="link-heading">
-                                <div class="icon">
-                                    <img src="images/logos/7selfserveboat.png">
-                                </div>
-                            </div>
-                            <div class="link-body">
-                                <h4>Selfserve Bot</h4>
-                                <p>It enables the user to do shipping and tracking through chatbots.</p>
-                            </div>
-                            <div class="link-footer">
-                                <div class="badge">
-                                    Customer Support
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-
             </div>
 
 
+            <div class="col-md-3 col-sm-6">
+                <div class="link-box">
+                    <a href="http://seller-plus.com/" target="_blank">
+                        <div class="link-heading">
+                            <div class="icon">
+                                <img src="images/logos/3_eseller.png">
+                            </div>
+                        </div>
+                        <div class="link-body">
+                            <h4>E SellerPrime </h4>
+                            <p>ESellerPrime aims to empower a million sellers in data driven
+                                decisions to source, analyze and sell in multiple geographies...</p>
+                        </div>
+                        <div class="link-footer">
+                            <div class="badge">
+                                E Commerce
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="link-box">
+                    <a href="http://www.syncnship.com" target="_blank">
+                        <div class="link-heading">
+                            <div class="icon">
+                                <img src="images/logos/10_sync.png">
+                            </div>
+                        </div>
+                        <div class="link-body">
+                            <h4>Sync n Ship</h4>
+                            <p>The solution integrates the eCommerce Portals like Shopify, Magento,
+                                Woocommerce, Prestashop, Amazon etc...</p>
+                        </div>
+                        <div class="link-footer">
+                            <div class="badge">
+                                E Commerce
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="link-box">
+                    <a href="http://www.onlinerepumanage.com" target="_blank">
+                        <div class="link-heading">
+                            <div class="icon">
+                                <img src="images/logos/4_Repumanage.png">
+                            </div>
+                        </div>
+                        <div class="link-body">
+                            <h4>Onlinerepumanage</h4>
+                            <p>Online reputation management solution</p>
+                        </div>
+                        <div class="link-footer">
+                            <div class="badge">
+                                Marketing
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="link-box">
+                    <a href="http://www.adooapp.com" target="_blank">
+                        <div class="link-heading">
+                            <div class="icon">
+                                <img src="images/logos/1_Adoo.png">
+                            </div>
+                        </div>
+                        <div class="link-body">
+                            <h4>Adoo</h4>
+                            <p>Smart Contacts and New Customer Aquisition App for SMBs</p>
+                        </div>
+                        <div class="link-footer">
+                            <div class="badge">
+                                Marketing
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="link-box">
+                    <a href="http://www.audiencekart.com" target="_blank">
+                        <div class="link-heading">
+                            <div class="icon">
+                                <img src="images/logos/2_Audicart.png">
+                            </div>
+                        </div>
+                        <div class="link-body">
+                            <h4>Audiencekart</h4>
+                            <p>Smart Audience connects SMBs such as small retail business owner,
+                                online retail business, hyperlocal food delivery business...</p>
+                        </div>
+                        <div class="link-footer">
+                            <div class="badge">
+                                Marketing
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="link-box">
+                    <a href="http://www.shipticketdesk.com" target="_blank">
+                        <div class="link-heading">
+                            <div class="icon">
+                                <img src="images/logos/9ship.png">
+                            </div>
+                        </div>
+                        <div class="link-body">
+                            <h4>Shipticketdesk</h4>
+                            <p>FreshDesk help desk automation plugin for SendPro C Series
+                                devices</p>
+                        </div>
+                        <div class="link-footer">
+                            <div class="badge">
+                                Customer Support
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="link-box">
+                    <a href="http://www.selfservebot.com" target="_blank">
+                        <div class="link-heading">
+                            <div class="icon">
+                                <img src="images/logos/7selfserveboat.png">
+                            </div>
+                        </div>
+                        <div class="link-body">
+                            <h4>Selfserve Bot</h4>
+                            <p>It enables the user to do shipping and tracking through chatbots.</p>
+                        </div>
+                        <div class="link-footer">
+                            <div class="badge">
+                                Customer Support
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
     <div class="viewSMBBtn displayFlex flex-center"><a href="http://pbsmbapps.com" target="_blank" class="magenta-btn">View
         PB SMB AppStore</a></div>
 
 </section>
+
+<script type="text/ng-template" id="videoModal.html">
+
+    <i class="nc-icon-mini ui-1_simple-remove close-btn" ng-click="close();"></i>
+    <div class="modal-body">
+
+        <div class="video" style="width: 1081px;height: 636px;">
+            <div class="videoContainer" style="width: 100%;height: 100%;">
+                <iframe src="https://preprod.rtcvid.net/smbsurvey/embed-iframe.php" style="width: 100%;height: 100%;">
+                </iframe>
+
+            </div>
+
+        </div>
+    </div>
+</script>

@@ -1,4 +1,4 @@
-var startupSmb = angular.module('startupSmb', ['ng', 'ngRoute', 'ui.router']);
+var startupSmb = angular.module('startupSmb', ['ng', 'ngRoute', 'ui.router','ui.bootstrap']);
 
 startupSmb.config(['$stateProvider', '$urlRouterProvider',
     function ($stateProvider, $urlRouterProvider) {

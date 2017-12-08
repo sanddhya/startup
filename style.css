@@ -425,15 +425,34 @@ section.toolkitSection a{
     text-decoration: none;
     color: #717171;
 }
-.carousalContainer iframe{
+iframe{
     width: 100%;
     outline: none !important;
 }
-.carousalContainer iframe:focus{
+iframe:focus{
     outline: none !important;
 }
 .slick-slide{
     outline: none !important;
+    position: relative;
+}
+.carousal-btn-section{
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+    display: none;
+}
+a.carousal-btn{
+    background: #000;
+    padding: 12px 40px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    width: 250px;
+    font-size: 20px;
 }
 #downloadCatlog h4{
     margin: 0;
@@ -448,7 +467,7 @@ section.toolkitSection a{
     width: 100%;
     height: 640px;
 }
-.surveyVideo .videoContainer iframe{
+iframe{
     width: 100%;
     height: 100%;
     outline: none;
@@ -460,7 +479,7 @@ section.toolkitSection a{
 .surveyBox{
     width: 100%;
     padding: 30px;
-    box-shadow: 0px 1px 4px #9b9b9b;
+    box-shadow: 0px 0px 6px #c0c0c0;
     color: #3e53a4;
     margin-right: 41px;
 }
@@ -502,7 +521,20 @@ section#context h2{
     height: 640px;
     background-image: url(images/novideo.png);
     position: relative;
+    padding: 0 200px;
 }
+.startSurvey>div,.startSurvey>div>div{
+    height: 100%;
+}
+.startSurvey .icon,.startSurvey .info{
+    display: flex;
+    align-items: center;
+    justify-content: center
+} 
+.startSurvey .imgBox{
+    width: 150px;
+}
+
 .surveyContainer {
     display: flex;
     justify-content: center;
@@ -542,12 +574,190 @@ section#context h2{
 .surveyContainer h4{
     font-size: 18px;
 }
-.surveyVideo h2.pb-underline::after{
+.surveyVideo h1.pb-underline::after{
     background: #f0f0f0;
+}
+a:focus {
+    outline: none;
+}
+.modal-dialog{
+    width: 1080px !important;
+    background: #000;
+}
+
+.modal.videoModal .close-btn {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 99;
+    background: rgba(0,0,0,0.5);
+    border-radius: 100%;
+    padding: 7px;
+}
+.modal-backdrop.in{
+    background: linear-gradient(180deg,#666 0,silver);
+    opacity: 0.98;
+}
+.modal.videoModal .modal-content{
+    padding: 0;
+    box-shadow: 0 0 133px 7px rgba(0,0,0,.59);
+    background: rgba(0,0,0,0.7);
+    border: none;
+    border-radius: 0;
+}
+.modal.videoModal{
+    display: flex !important;
+    align-items: center;
+}
+iframe{
+    outline: none !important;
+}
+.deviceSpecSection{
+    padding-left: 60px;
+    margin-top: 80px;
+}
+.deviceSpecCard h3{
+    margin-top: 5px;
+}
+.deviceSpecification .deviceHeading{
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+    .deviceSpecSection{
+        padding-left: 0;
+        margin-top: 50px;
+    }
 }
 @media only screen and (max-width: 991px) {
     .api-card{
         height: auto;
         margin-bottom: 15px;
+    }
+    .startSurvey>div, .startSurvey>div>div{
+        height: auto;
+    }
+    .startSurvey>div{
+        padding: 20px 0;
+    }
+    .startSurvey{
+        padding: 15px;
+        height: auto;
+    }
+    .surveyVideo a.magenta-btn {
+        margin-top: 20px;
+        display: inline-block;
+        text-align: center;
+    }
+    header h1{
+        padding: 0 15px;
+        text-align: center;
+    }
+    .startSurvey .imgBox{
+        width: 100px;
+    }
+    .startSurvey .info{
+        text-align: center;
+    }
+
+    div.sourcedText{
+        position: relative;
+        width: 100%;
+        top: 0;
+        left: 0;
+        text-align: center;
+        
+    }
+    .sourcedText .imgDiv{
+        width: 130px;
+        margin: 0 auto;
+    }
+    .sourcedText h4{
+        text-align: center;
+    }
+    .surveyBox li{
+        margin: 10px 0;
+    }
+    #context .carousalContainer{
+        display: none;
+    }
+    section .sourced{
+        display: none;
+    }
+    .takeToSurveyContent{
+        text-align: center;
+    }
+    div.takeToSurveyContent a.magenta-btn{
+        position: relative;
+        display: inline-block;
+        margin: 15px 0;
+    }
+    div.imgInfo{
+        text-align: center;
+    }
+    header{
+        margin-bottom: 50px;
+    }
+    .catName{
+        margin-bottom: 20px;
+    }
+    .deviceSpecification div.backgroundImg{
+        position: relative;
+    }
+    .deviceSpecification .deviceSpecSection{
+        padding-left: 15px;
+    }
+}
+@media only screen and (max-width: 780px) {
+    header .header-title{
+       padding: 0 20px;
+    }
+}
+@media only screen and (max-width: 729px) {
+    header h1.pb-underline::after{
+        display: none;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .deviceSpecification .deviceHeading{
+        position: relative;
+    }
+    .deviceSpecification .deviceHeading h2{
+        margin-top: 0;
+    }
+}
+@media only screen and (max-width: 545px) {
+    /*header .header-title{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 20px;
+    }
+    header .userIcons{
+        margin-top: 20px;
+    }
+    header .loginBtn{
+        margin-left: 0 !important;
+    }*/
+}
+
+@media only screen and (max-width: 400px) {
+    header{
+        margin-bottom: 100px;
+    }
+    #pbSMBHackathon h2{
+        padding: 0 15px;
+        text-align: center;
+    }
+    #pbSMBHackathon h2.pb-underline::after{
+        display: none;
+    }
+    div.sourcedText{
+        padding: 0;
     }
 }

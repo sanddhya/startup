@@ -16,3 +16,7 @@ startupSmb.config(['$stateProvider', '$urlRouterProvider',
         $urlRouterProvider.otherwise('/home/');
     }]);
 
+startupSmb.config(function ($sceProvider) {
+    $sceProvider.enabled(false);
+});
+

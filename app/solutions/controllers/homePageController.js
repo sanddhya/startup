@@ -22,14 +22,19 @@ var homePageController = startupSmb.controller('homePageController', ['$scope', 
             else {
                 $uibModal.open({
                     templateUrl: 'videoModal.html',
-                    controller: ['$scope', '$uibModalInstance', function ($scope, $uibModalInstance) {
+                    controller: ['$scope', '$uibModalInstance', 'userId', function ($scope, $uibModalInstance, userId) {
+                        $scope.iframeUrl = 'http://ec2-52-89-89-176.us-west-2.compute.amazonaws.com:8081/home' + '?token=' + userId;
                         $scope.close = function () {
                             $uibModalInstance.close();
                         }
                     }],
                     backdrop: 'static',
                     windowClass: "videoModal",
-                    resolve: {}
+                    resolve: {
+                        userId: function () {
+                            return userId;
+                        }
+                    }
                 }).result.then(function (data) {
 
                 });
@@ -135,5 +140,5 @@ var homePageController = startupSmb.controller('homePageController', ['$scope', 
 
 var surveyPageController = startupSmb.controller('surveyPageController', ['$scope', '$stateParams', function ($scope, $stateParams) {
     var userId = $stateParams.id;
-    console.log(userId);
+    $scope.iframeUrl = 'http://ec2-52-89-89-176.us-west-2.compute.amazonaws.com:8081/home' + '?token=' + userId;
 }]);

@@ -1,5 +1,5 @@
-var homePageController = startupSmb.controller('homePageController', ['$scope', '$uibModal', '$stateParams', 'serviceForApiCall',
-    function ($scope, $uibModal, $stateParams, serviceForApiCall) {
+var homePageController = startupSmb.controller('homePageController', ['$scope','$window', '$uibModal', '$stateParams', 'serviceForApiCall',
+    function ($scope, $window, $uibModal, $stateParams, serviceForApiCall) {
 
 
         var userId = $stateParams.id;
@@ -14,7 +14,8 @@ var homePageController = startupSmb.controller('homePageController', ['$scope', 
                 fbq('track', 'started survey');
             }
             if (mobilecheck() || window.innerWidth <= 1024) {
-                $scope.startSurvey = true;
+                //$scope.startSurvey = true;
+                $window.location.href = "http://ec2-52-89-89-176.us-west-2.compute.amazonaws.com:8081/";
                 window.scrollTo(0, 0);
             }
             else {

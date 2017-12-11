@@ -587,8 +587,8 @@ a:focus {
 
 .modal.videoModal .close-btn {
     position: absolute;
-    right: 20px;
-    top: 10px;
+    right: 4px;
+    top: 4px;
     font-size: 20px;
     color: #fff;
     cursor: pointer;

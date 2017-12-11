@@ -440,3 +440,11 @@ body::-webkit-scrollbar-thumb {
     text-align: center;
     color: #3e53a4;
 }
+.downArrow{
+    background-image: url(../images/arrowDownload.png);
+    height: 64px;
+    width:64px;
+    position:absolute;
+    right:100px;
+    top:680px;
+}

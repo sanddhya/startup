@@ -1,22 +1,23 @@
-var homePageController = startupSmb.controller('homePageController', ['$scope','$window', '$uibModal', '$stateParams', 'serviceForApiCall',
-    function ($scope, $window, $uibModal, $stateParams, serviceForApiCall) {
+var homePageController = startupSmb.controller('homePageController', ['$scope', '$window', '$uibModal', '$stateParams', 'serviceForApiCall', '$state',
+    function ($scope, $window, $uibModal, $stateParams, serviceForApiCall, $state) {
 
 
         var userId = $stateParams.id;
         if (userId) {
             serviceForApiCall.sendEvent('landed', userId);
-            fbq('track', 'landed');
+            fbq('track', 'landed', {"id": userId});
         }
 
         $scope.initSurvey = function () {
             if (userId) {
                 serviceForApiCall.sendEvent('started survey', userId);
-                fbq('track', 'started survey');
+                fbq('track', 'started survey', {"id": userId});
             }
             if (mobilecheck() || window.innerWidth <= 1024) {
-                //$scope.startSurvey = true;
-                $window.location.href = "http://ec2-52-89-89-176.us-west-2.compute.amazonaws.com:8081/";
-                window.scrollTo(0, 0);
+                $scope.startSurvey = true;
+                $state.go('survey', {id: userId});
+                //$window.location.href = "http://ec2-52-89-89-176.us-west-2.compute.amazonaws.com:8081/";
+                //window.scrollTo(0, 0);
             }
             else {
                 $uibModal.open({
@@ -129,5 +130,10 @@ var homePageController = startupSmb.controller('homePageController', ['$scope','
             });
 
         });
-
     }]);
+
+
+var surveyPageController = startupSmb.controller('surveyPageController', ['$scope', '$stateParams', function ($scope, $stateParams) {
+    var userId = $stateParams.id;
+    console.log(userId);
+}]);

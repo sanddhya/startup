@@ -20,3 +20,18 @@ startupSmb.config(function ($sceProvider) {
     $sceProvider.enabled(false);
 });
 
+startupSmb.directive("scroll", function ( $rootScope) {
+return {
+  link: function(scope, element, attrs) {
+      window.onscroll = function(ev) {
+                if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight-200) {
+                  // you're at the bottom of the page
+                  $(element).find('#scrollDownBtn').css('display','none');
+               }else{
+                    $(element).find('#scrollDownBtn').css('display','block');
+               }
+            };
+    }
+}
+})
+

@@ -1,3 +1,6 @@
+<section id="scrollDownBtn" class="demo">
+  <a href="javascript:void(0)"><span></span><span></span><span></span></a>
+</section>
 <header>
     <div class="container">
         <div class="row">
@@ -56,8 +59,8 @@
             </div>
         </div>
 
-<div class="downArrow"></div>
-    </div>
+<!-- <div class="downArrow"></div>
+    </div> -->
 </header>
 <section class="aboutPB">
     <div class="container">
@@ -331,6 +334,16 @@
 </section>
 <section id="takeToSurvey">
     <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="userIcons pull-right">
+                    <a href="https://business.facebook.com/PBSMB2017/?business_id=130991410796217" target="_blank"
+                   class="socialIcon">
+                        <img src="images/1-FB.png">
+                    </a>
+                </div>
+            </div>   
+        </div>
         <div class="takeToSurveyContent">
             <div class="row">
                 <div class="col-md-8">
@@ -349,19 +362,7 @@
 
         </div>
 
-        <div class="row">
-                <div class="col-md-12">
-
-            <div class="userIcons pull-right">
         
-                <a href="https://business.facebook.com/PBSMB2017/?business_id=130991410796217" target="_blank"
-                   class="socialIcon">
-                    <img src="images/1-FB.png">
-                </a>
-
-            </div>
-
-        </div>   </div>
     </div>
 </section>
 <!--
@@ -674,7 +675,7 @@
     <i class="nc-icon-mini ui-1_simple-remove close-btn" ng-click="close();"></i>
     <div class="modal-body">
 
-        <div class="video" style="width: 1081px;height: 700px;">
+        <div class="video" style="width: calc(100vw - 500px);height: calc(100vh - 100px);">
             <div class="videoContainer" style="width: 100%;height: 100%;">
                 <iframe ng-src="{{iframeUrl}}" style="width: 100%;height: 100%;">
                 </iframe>

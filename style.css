@@ -1,10 +1,18 @@
 header {
     padding: 20px 0;
     position: relative;
-    margin-bottom: 200px;
-    height: 700px;
+    background: none !important;
 }
-
+header::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 90%;
+    z-index: -1;
+    background-image: linear-gradient(32deg, #cf0989 0%, #3e53a4 100%) !important;
+}
 header .backgroundImg {
     z-index: -1;
 }
@@ -33,9 +41,8 @@ header .overlay {
 
 
 header .container .title {
-    display: flex;
+    margin: 0 auto;
     height: 100%;
-    float: left;
     align-items: center;
 }
 .header-title label{
@@ -83,6 +90,7 @@ a.magenta-btn {
     border-radius: 10px;
     text-decoration: none;
     color: #fff;
+    display: inline-block;
 }
 
 .pb-underline {
@@ -96,7 +104,7 @@ a.magenta-btn {
     width: 40%;
     height: 2px;
     right: 0;
-    background-image: linear-gradient(90deg, #3e53a4 0%, #cf0989 100%);
+    background-image: linear-gradient(90deg, transparent 0%, #cf0989 100%);
 }
 
 .userIcons a.loginBtn {
@@ -691,6 +699,101 @@ iframe{
   }
 }
 
+
+.timeline{
+    display: flex;
+    margin-top: 25px;
+}
+.timeline .yearInfo{
+    width: 14.2%;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+.timeline .yearInfo .icon{
+    height: 150px;
+}
+.timeline .yearInfo .year{
+    margin-top: 50px;
+}
+.timeline .yearInfo *{
+    color: #e1e1e1;
+}
+.timeline .yearInfo .imgBox{
+    width: 80%;
+    margin: 0 auto;
+}
+.timeline .yearInfo .imgBox {
+    width: 115px;
+    height: 115px;
+    border-radius: 100%;
+    border: 3px solid #232222;
+}
+.timeline .yearInfo .imgBox img{
+    width: 100%;
+    height: 100%;
+}
+.timeline .yearInfo h4{
+    line-height: 1.2;
+    color: #fff;
+}
+.line {
+    height: 2px;
+    background: #fff;
+    width: 100%;
+    position: absolute;
+    margin-top: 30px;
+    left: 0;
+}
+.line::after {
+    content: "";
+    width: 25px;
+    height: 25px;
+    background: #c0c0c0;
+    border: 4px solid #fff;
+    position: absolute;
+    left: 50%;
+    top: -12px;
+    border-radius: 100%;
+    margin-left: -11px;
+}
+.giftCard {
+    padding: 50px;
+    color: #fff;
+    background: #232222;
+}
+.giftCard h3{
+    color: #e1e1e1;
+}
+.giftImage{
+    width: 270px;
+    margin: 0 auto;
+}
+.timelineSection{
+    background: black;
+}
+.timelineSection a.magenta-btn{
+    background: #cf0989;
+    padding: 10px 40px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+.pb-underline.whiteLine::after{
+    background-image: linear-gradient(90deg, transparent 0%, #FFF 100%);
+}
+.giftCard h3{
+    margin: 0;
+}
+.giftCard .highlight{
+    font-weight: bold;
+    border: none;
+    font-size: 25px;
+}
 @media only screen and (max-width: 1024px) {
     .deviceSpecSection{
         padding-left: 0;
@@ -774,6 +877,12 @@ iframe{
     }
     .deviceSpecification .deviceSpecSection{
         padding-left: 15px;
+    }
+    .timeline{
+        display: block;
+    }
+    .timeline .yearInfo{
+        width: 100%;
     }
 }
 @media only screen and (max-width: 780px) {

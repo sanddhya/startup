@@ -2,10 +2,10 @@
   <a href="javascript:void(0)"><span></span><span></span><span></span></a>
 </section>
 <header>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="header-title">
-                <div class="title" style="width: 160px">
+                <div class="title" style="width: 160px;margin: 0 auto">
                     <!-- <a href="http://pb.com" target="_blank" class="pb-header-mark"></a>
                     <label>pitney bowes</label> -->
                     <img src="images/PB Logo.png" style="width: 100%;">
@@ -13,55 +13,175 @@
              
             </div>
         </div>
-        <div class="row surveyVideo">
-            <div class="displayFlex" style="justify-content: center;">
-                <h1 class="pb-underline" style="color: #f0f0f0;margin-top: 0">
-                    Pitney Bowes SMB Application Assessment Survey
-                </h1>
+        <div class="displayFlex" style="justify-content: center;">
+            <h1 class="pb-underline whiteLine" style="color: #f0f0f0;">
+                SMB Application Assessment Survey
+            </h1>
+        </div>
+        <div class="container timelineSection">
+            <div class="displayFlex flex-center">
+                <h2 class="pb-underline magenta-text" style="margin-top: 30px;">
+                    Who We Are
+                </h2>
             </div>
-            <div class="col-md-12 video" style="padding: 0;" ng-if="startSurvey">
-                <!-- <div class="videoContainer">
-                    <iframe src="https://preprod.rtcvid.net/smbsurvey/embed-iframe.php"></iframe>
-                </div> -->
-                <!-- <div class="embed-responsive embed-responsive-16by9">
-                   <iframe class="embed-responsive-item" src="http://ec2-52-89-89-176.us-west-2.compute.amazonaws.com:8081/"></iframe>
-               </div>  -->
-
-            </div>
-            <div class="col-md-12" ng-show="!startSurvey">
-                <div class="startSurvey">
-      
-                    <div class="col-md-4" style="z-index: 1">
-                        <div class="icon">
-                            <div class="imgBox">
-                                <img src="images/list.png" style="width: 100%;">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-8 col-md-offset-right-1" style="z-index: 1">
-                        <div class="info">
-                            <div>
-                                <h4 style="margin-bottom: 30px;">Help us in getting your feedback on some of the
-                                    applications we believe are most useful for your business.</h4>
-
-                                <h4>Complete This Survey for A Chance to Win</h4>
-                                <span style="font-size: 25px;"> <img src="images/trophy.png"
-                                                                     style="width: 40px;margin-right: 15px;"> $500 Gift Voucher</span>
-                                <div>
-                                    <a href="javascript:void(0)" ng-click="initSurvey()" class="magenta-btn">Start Survey</a>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="timeline" style="margin-top: 0;">
+                        <div class="yearInfo">
+                            <div class="icon">
+                                <div class="imgBox">
+                                    <img src="images/img1.png">
                                 </div>
                             </div>
+                            <div class="line">
+                                
+                            </div>
+                            <h3 class="year">1920</h3>
+                            <h4>The birth of an industry</h4>
+                            <p>
+                                Invention of first commercially available postage meter which changed the way companies of all sizes do business.
+                            </p>
+                        </div>
+                        <div class="yearInfo">
+                            <div class="icon">
+                                <div class="imgBox">
+                                    <img src="images/img2.png">
+                                </div>
+                            </div>
+                            <div class="line">
+                                
+                            </div>
+                            <h3 class="year">1949</h3>
+                            <h4>A desktop mail station</h4>
+                            <p>
+                                Fax machines and scales 
+                                with microprocessors are 
+                                added to the Pitney Bowes 
+                                product line.
 
+                            </p>
+                        </div>
+                        <div class="yearInfo">
+                            <div class="icon">
+                                <div class="imgBox">
+                                    <img src="images/img3.png">
+                                </div>
+                            </div>
+                            <div class="line">
+                                
+                            </div>
+                            <h3 class="year">1986</h3>
+                            <h4>Moving beyond mail</h4>
+                            <p>
+                                The first mass-market 
+                                meter designed to sit 
+                                on a desk launches.
+
+                            </p>
+                        </div>
+                        <div class="yearInfo">
+                            <div class="icon">
+                                <div class="imgBox">
+                                    <img src="images/img4.png">
+                                </div>
+                            </div>
+                            <div class="line">
+                                
+                            </div>
+                            <h3 class="year">1996</h3>
+                            <h4>Empowering SMB to grow</h4>
+                            <p>
+                                Line of credit for postage 
+                                allows clients to “mail now 
+                                and pay later” for postage
+                                ultimately improving their 
+                                cash flow.
+
+                            </p>
+                        </div>
+                        <div class="yearInfo">
+                            <div class="icon">
+                                <div class="imgBox">
+                                    <img src="images/img5.png">
+                                </div>
+                            </div>
+                            <div class="line">
+                                
+                            </div>
+                            <h3 class="year">2012</h3>
+                            <h4>Going Global</h4>
+                            <p>
+                                Pitney Bowes simplifies 
+                                the complexity of 
+                                overseas shipping for 
+                                ecommerce clients.
+
+                            </p>
+                        </div>
+                        <div class="yearInfo">
+                            <div class="icon">
+                                <div class="imgBox">
+                                    <img src="images/img6.png">
+                                </div>
+                            </div>
+                            <div class="line">
+                                
+                            </div>
+                            <h3 class="year">2016</h3>
+                            <h4>SendPro</h4>
+                            <p>
+                                the First-of-its-Kind 
+                                Cloud-based Multi-
+                                Carrier Shipping Solution 
+                                for the Modern Office
+
+                            </p>
+                        </div>
+                        <div class="yearInfo">
+                            <div class="icon">
+                                <div class="imgBox">
+                                    <img src="images/img7.png">
+                                </div>
+                            </div>
+                            <div class="line">
+                                
+                            </div>
+                            <h3 class="year">2017</h3>
+                            <h4>SendPro C Series</h4>
+                            <p>
+                                Touch Screen 
+                                Android tablet 
+                                making it the 
+                                simplest way to mail, 
+                                ship and track
+
+                            </p>
                         </div>
                     </div>
                 </div>
-
+            </div>
+            <div class="row giftCard">
+                <div class="col-md-4">
+                    <div class="giftImage">
+                        <img src="images/sell_my_gift_card.png" style="width: 100%;">
+                    </div>
+                    
+                </div>
+                <div class="col-md-8">
+                    <h3>
+                        Today we solicit your <span class="highlight">feedback</span>. 
+                    </h3>
+                    <h3>We Launched an SMB challenge in Oct 2017 to bring in Global Developer community to create solutions for our 1Mn+ Small and Medium Business Customers. 
+                    </h3>
+                    <h3>Complete the survey and get a chance to win a <span class="highlight">$500</span> gift card</h3>
+                    <a href="javascript:void(0)" ng-click="initSurvey()" class="magenta-btn">Start Survey</a>
+                </div>
             </div>
         </div>
-
-<!-- <div class="downArrow"></div>
-    </div> -->
+        
+    </div>
 </header>
+
 <section class="aboutPB">
     <div class="container">
         <div class="displayFlex flex-center">

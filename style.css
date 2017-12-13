@@ -884,6 +884,9 @@ iframe{
     .timeline .yearInfo{
         width: 100%;
     }
+    .line{
+        display: none;
+    }
 }
 @media only screen and (max-width: 780px) {
     header .header-title{

@@ -767,8 +767,9 @@ iframe{
     color: #e1e1e1;
 }
 .giftImage{
-    width: 270px;
+    width: 200px;
     margin: 0 auto;
+    padding: 40px 0;
 }
 .timelineSection{
     background: black;

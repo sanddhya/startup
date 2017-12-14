@@ -1,8 +1,15 @@
 var homePageController = startupSmb.controller('homePageController', ['$scope', '$window', '$uibModal', '$stateParams', 'serviceForApiCall', '$state',
     function ($scope, $window, $uibModal, $stateParams, serviceForApiCall, $state) {
 
+        var id = $window.location.search;
+        var userId = "";
 
-        var userId = $stateParams.id;
+        if (id) {
+            userId = decodeURIComponent(id.replace('?id=', ''));
+        } else {
+            userId = $stateParams.id;
+        }
+
         if (userId) {
             serviceForApiCall.sendEvent('landed', userId);
             fbq('track', 'landed', {"id": userId});

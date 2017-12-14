@@ -71,11 +71,6 @@
     justify-content: space-around;
     margin: auto;
 }
-
-.subheading.pb-underline::after {
-    left: 0;
-}
-
 .card {
     position: relative;
     padding: 15px;

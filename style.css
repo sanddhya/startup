@@ -95,6 +95,7 @@ a.magenta-btn {
 
 .pb-underline {
     position: relative;
+    display: inline-block;
 }
 
 .pb-underline::after {
@@ -104,7 +105,7 @@ a.magenta-btn {
     width: 40%;
     height: 2px;
     right: 0;
-    background-image: linear-gradient(90deg, transparent 0%, #cf0989 100%);
+    background-image: linear-gradient(90deg, transparent 0%, currentColor 100%);
 }
 
 .userIcons a.loginBtn {
@@ -582,9 +583,7 @@ section#context h2{
 .surveyContainer h4{
     font-size: 18px;
 }
-.surveyVideo h1.pb-underline::after{
-    background: #f0f0f0;
-}
+
 a:focus {
     outline: none;
 }
@@ -785,9 +784,7 @@ iframe{
     font-weight: 600;
     margin-top: 15px;
 }
-.pb-underline.whiteLine::after{
-    background-image: linear-gradient(90deg, transparent 0%, #FFF 100%);
-}
+
 .giftCard h3{
     margin: 0;
 }
@@ -904,6 +901,7 @@ iframe{
     }
     .giftCard {
         padding: 10px;
+        padding-bottom: 30px;
     }
 }
 @media only screen and (max-width: 780px) {
